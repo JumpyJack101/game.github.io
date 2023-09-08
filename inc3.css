@@ -1,0 +1,61 @@
+/* Reset default margin and padding for body and HTML elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Create a flex container to center content vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body take the entire viewport height */
+    background: linear-gradient(to bottom, #333333, #111111);
+/* Gradient background */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Style the button container */
+#controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased space between buttons */
+    text-align: center; /* Center-align text within buttons */
+}
+
+/* Style the buttons with increased font-size and padding */
+#controls button {
+    padding: 15px 30px; /* Increased button padding */
+    font-size: 40px; /* Increased button font size */
+    background: linear-gradient(to bottom, #ff6f61, #e84a42);
+/* Gradient button background */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hover effect for buttons */
+#controls button:hover {
+    background: linear-gradient(to bottom, #1abc9c, #16a085);
+}
+
+/* Style the text container with increased font-size */
+#text {
+    margin-top: 20px; /* Add some space between buttons and text */
+    text-align: center; /* Center-align text */
+    font-size: 45px; /* Increased text font size */
+}
+
+/* Add a responsive font size for smaller screens */
+@media screen and (max-width: 768px) {
+    #controls button {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+    #text {
+        font-size: 18px; /* Adjusted text font size for smaller screens */
+    }
+}
